@@ -1,0 +1,72 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-1: #2a2a2a;
+  --color-2: #ef5490;
+  --color-3: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+a,
+i {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.header .navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.header .open-nav {
+  font-size: 2rem;
+  color: var(--color-2);
+  margin-left: auto;
+}
+.header .nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50vw;
+  height: 100vh;
+  background-color: var(--color-2);
+  transform: translateX(100%);
+  transition: all 1s ease-in-out;
+}
+.header .close-nav {
+  font-size: 2rem;
+  color: var(--color-3);
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+.header ul {
+  list-style-type: none;
+  margin: 120px 0 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+.header a {
+  font-weight: 500;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  color: var(--color-3);
+}
+.header a:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=index.css.map */
