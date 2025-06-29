@@ -146,7 +146,7 @@ address {
   text-transform: uppercase;
   margin: 1rem 0;
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: var(--color-2);
 }
 .main h4 {
@@ -156,6 +156,9 @@ address {
 .main p {
   margin: 1rem 0;
   font-weight: 500;
+}
+.main .desc p {
+  text-align: center;
 }
 .main img {
   max-width: 100%;
@@ -186,6 +189,10 @@ address {
 }
 
 @media screen and (min-width: 1000px) {
+  .container {
+    max-width: 1500px;
+    margin: 0 auto;
+  }
   .header .open-nav,
   .header .close-nav {
     display: none;
@@ -198,5 +205,59 @@ address {
     margin: 0;
     flex-direction: row;
     gap: 1.5rem;
+  }
+  .main h2 {
+    text-align: left;
+  }
+  .main .desc p {
+    text-align: left;
+  }
+  .main section {
+    margin: 5rem 0;
+  }
+  .main .about .container,
+  .main .hours .container,
+  .main .gifts .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+  .main .about img,
+  .main .hours img,
+  .main .gifts img {
+    width: 600px;
+    height: 450px;
+    border-radius: 10px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    flex: 1;
+  }
+  .main .about .desc,
+  .main .hours .desc,
+  .main .gifts .desc {
+    flex: 1;
+  }
+  .main .about .desc,
+  .main .gifts .desc {
+    order: 2;
+  }
+  .main .about img,
+  .main .gifts img {
+    order: 1;
+  }
+  .main .services h2,
+  .main .services .desc p,
+  .main .contact h2,
+  .main .contact .desc p {
+    text-align: center;
+  }
+  .main .categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .main .category {
+    flex: 1 0 40%;
   }
 }/*# sourceMappingURL=index.css.map */
