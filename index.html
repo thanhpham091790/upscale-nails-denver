@@ -45,34 +45,36 @@
 <body>
     <!-- Header -->
     <header class="header">
-        <div class="navbar">
-            <a class="logo" href="#">
-                <img src="./public/logo.png" alt="Upscale Nails Denver" />
-            </a>
-            <i class="fa-solid fa-bars open-nav"></i>
-            <nav class="nav">
-                <i class="fa-solid fa-xmark close-nav"></i>
-                <ul>
-                    <li>
-                        <a href="#">Facial care</a>
-                    </li>
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#">Hours</a>
-                    </li>
-                    <li>
-                        <a href="#">Services</a>
-                    </li>
-                    <li>
-                        <a href="#">Gifts</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
-            </nav>
+        <div class="container">
+            <div class="navbar">
+                <a class="logo" href="#">
+                    <img src="./public/logo.png" alt="Upscale Nails Denver" />
+                </a>
+                <i class="fa-solid fa-bars open-nav"></i>
+                <nav class="nav">
+                    <i class="fa-solid fa-xmark close-nav"></i>
+                    <ul>
+                        <li>
+                            <a href="./public/facial_services.pdf" target="_blank">Facial care</a>
+                        </li>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li>
+                            <a href="#hours">Hours</a>
+                        </li>
+                        <li>
+                            <a href="#services">Services</a>
+                        </li>
+                        <li>
+                            <a href="#gifts">Gifts</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
         <div class="hero">
             <h1>Nail Care</h1>
@@ -87,8 +89,8 @@
         <section id="about" class="about">
             <div class="container">
                 <div class="desc">
-                    <h2 class="heading-2">About Us</h2>
-                    <p class="body-2">We are located at University Hills in Denver, committed to giving the service
+                    <h2>About Us</h2>
+                    <p>We are located at University Hills in Denver, committed to giving the service
                         and
                         outcome.We have an extensive selection of services to choose from and a rich collection of
                         over 300 Dipping Powers, 500 Shellac/Gel colors, and over 700 nail polish colors so you can
@@ -105,8 +107,8 @@
         <section id="hours" class="hours">
             <div class="container">
                 <div class="desc">
-                    <h2 class="heading-2">Open Hours</h2>
-                    <p class="body-2">
+                    <h2>Open Hours</h2>
+                    <p>
                         Business hours may be changed due to day time saving months.<br>
                         Mon - Fri: 9 AM - 7 PM<br>
                         Saturday: 9 AM - 6 PM<br>
@@ -122,8 +124,8 @@
         <section id="services" class="services">
             <div class="container">
                 <div class="desc">
-                    <h2 class="heading-2">Our Services</h2>
-                    <p class="body-2">Upscale nails salon is here to serve you quality services for dashing results.</p>
+                    <h2>Our Services</h2>
+                    <p>Upscale nails salon is here to serve you quality services for dashing results.</p>
                 </div>
                 <div class="categories">
                     <div class="category">
@@ -273,8 +275,8 @@
         <section id="gifts" class="gifts">
             <div class="container">
                 <div class="desc">
-                    <h2 class="heading-2">Gift Certificate</h2>
-                    <p class="body-2">Make sure to buy a Gift Certificate to a relaxing spa experience at Upscale
+                    <h2>Gift Certificate</h2>
+                    <p>Make sure to buy a Gift Certificate to a relaxing spa experience at Upscale
                         Nails for the
                         people you love and care for. And....Don't forget to get one for yourself too! You
                         deserve it. Let the beauty of what you love be what you do.</p>
@@ -287,18 +289,20 @@
         <section id="contact" class="contact">
             <div class="container">
                 <div class="desc">
-                    <h2 class="heading-2">Contact</h2>
-                    <address class="body-2">
-                        Below please find the best means by which you may contact me.<br>
-                        2352 South Colorado Boulevard<br>
-                        Denver, CO 80222<br>
-                        1 303 300-1088 - upscalenaildenver.com
-                    </address>
-                    </p>
+                    <h2>Contact</h2>
+                    <p>Please find the best means by which you may contact me.</p>
                 </div>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3071.08369649081!2d-104.94396188434892!3d39.670331808616986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c7f7e17c4a531%3A0xbbd2a6b115f5bc28!2sUpscale%20Nails%20Denver!5e0!3m2!1sen!2sus!4v1640131712260!5m2!1sen!2sus"
-                    title="Google maps"></iframe>
+
+                <div class="address">
+                    <address>
+                        Address: 2352 South Colorado Boulevard, Denver, CO 80222<br />
+                        Phone: 303-300-1088<br />
+                        Website: upscalenaildenver.com
+                    </address>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3071.08369649081!2d-104.94396188434892!3d39.670331808616986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c7f7e17c4a531%3A0xbbd2a6b115f5bc28!2sUpscale%20Nails%20Denver!5e0!3m2!1sen!2sus!4v1640131712260!5m2!1sen!2sus"
+                        title="Google maps"></iframe>
+                </div>
             </div>
         </section>
     </main>
@@ -314,41 +318,40 @@
             <ul>
                 <li>
                     <a href="facial_services.pdf">
-                        <h5 class="heading-5">Facial Care</h5>
+                        Facial Care
                     </a>
                 </li>
                 <li>
                     <a href="#section-about">
-                        <h5 class="heading-5">About</h5>
+                        About
                     </a>
                 </li>
                 <li>
                     <a href="#section-hours">
-                        <h5 class="heading-5">Hours</h5>
+                        Hours
                     </a>
                 </li>
                 <li>
                     <a href="#section-services">
-                        <h5 class="heading-5">Services</h5>
+                        Services
                     </a>
                 </li>
                 <li>
                     <a href="#section-gifts">
-                        <h5 class="heading-5">Gifts</h5>
+                        Gifts
                     </a>
                 </li>
                 <li>
                     <a href="#section-contact">
-                        <h5 class="heading-5">Contact</h5>
+                        Contact
                     </a>
                 </li>
             </ul>
 
-            <address class="body-3">
+            <address>
                 &copy; Upscale Nail & Spa Denver, 2021 | All Rights Reserved<br>
-                2352 South Colorado Boulevard<br>
-                Denver, CO 80222<br>
-                1 303 300-1088 | upscalenaildenver.com
+                2352 South Colorado Boulevard, Denver, CO 80222<br>
+                303 300-1088 | upscalenaildenver.com
             </address>
         </div>
     </footer>
