@@ -6,8 +6,9 @@
 
 :root {
   --color-1: #2a2a2a;
-  --color-2: #ef5490;
+  --color-2: #e83458;
   --color-3: #ffffff;
+  --color-4: #f6f5f5;
 }
 
 body {
@@ -16,6 +17,16 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
 
 a,
@@ -44,6 +55,15 @@ i {
   transform: translateX(100%);
   transition: all 1s ease-in-out;
 }
+.header .nav a {
+  font-weight: 500;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  color: var(--color-3);
+}
+.header .nav a:hover {
+  text-decoration: underline;
+}
 .header .close-nav {
   font-size: 2rem;
   color: var(--color-3);
@@ -61,12 +81,38 @@ i {
   justify-content: flex-start;
   align-items: center;
 }
-.header a {
-  font-weight: 500;
-  font-size: 1.25rem;
-  text-transform: uppercase;
-  color: var(--color-3);
+.header .hero {
+  width: 100vw;
+  height: 500px;
+  background-image: url("./public/hero.png");
+  background-color: var(--color-4);
+  background-repeat: no-repeat;
+  background-position: 75% 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-.header a:hover {
-  text-decoration: underline;
+.header h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 1%;
+  text-transform: uppercase;
+  color: var(--color-2);
+}
+.header p {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+.header .book {
+  display: inline-block;
+  background-color: var(--color-2);
+  color: var(--color-3);
+  text-decoration: none;
+  padding: 1rem 2rem;
+  opacity: 0.5;
+  font: inherit;
+  font-weight: 400;
+  font-size: 1.5rem;
 }/*# sourceMappingURL=index.css.map */
